@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myFirstApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            padding: 20%;
+        }
+        section{
+            padding: 50px;
+            font-size: smaller;
+            border-radius:  49% 51% 50% 50% / 35% 59% 41% 65% ;
+            box-sizing: border-box;
+        }
+       span{
+        color : rgb(227, 122, 122);
+       }
+      
+    </style>
+    <title>AngularJS</title>
+</head>
+<body class="bg-info">
+    <section class="justify-content-center align-items-center my-auto mx-auto shadow shadow-lg bg-light text-center">
+        <h2 class="my-2">Name Calculator AngularJS</h2>
+        <div ng-controller="mycontroller">
+            
+            <input class="form-control w-100" type="text" ng-model="name" ng-keyup="displayNumeric();">
+            <p class="my-1">The total numeric value of person's <div class="my-1"> name is : <span>{{totalValue}}</span>  of the name : <span>{{name}}</span></div></p>
+        </div>
+       
+    </section>
+   
+</body>
+</html>
